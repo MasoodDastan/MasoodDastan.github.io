@@ -38,6 +38,170 @@ ol, ul {
 }
 
 
+/* .custom-icon img {
+    height: 1em; /* Scales with font size, similar to FontAwesome */
+    /* width: auto; /* Maintains aspect ratio */
+    /* vertical-align: middle; /* Aligns image with text */
+/* } */ 
+
+
+
+.job-description {
+    margin-bottom: 1em; /* Adds space below each job-description */
+}
+
+.publication-description {
+    /* margin-bottom: 1em;  */
+	/* Adds space below each job-description */
+	margin-top: 0em;
+	margin-bottom: 0em; /* Adds space between list items */
+    line-height: 1.6; /* Increases the line height for better readability */
+    text-align: justify; /* Justifies the text for a cleaner look */
+	color: #666;
+	
+}
+.publication-description li {
+	list-style:  square;
+}
+
+.job-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    display: inline; /* Ensures it stays on the same line as the icon */
+    margin-bottom: 0.2em; /* Adds a small space below the job title */
+	color: #666;
+	position: relative; /* Relative positioning */
+    left: 10px; /* Moves the text to the right */
+    display: inline-block; /* Allows us to use left positioning */
+
+
+}
+
+.education-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    display: inline; /* Ensures it stays on the same line as the icon */
+    margin-bottom: 0.2em; /* Adds a small space below the job title */
+	color: #666;
+	position: relative; /* Relative positioning */
+    left: 10px; /* Moves the text to the right */
+    display: inline-block; /* Allows us to use left positioning */
+
+}
+
+.education-title a:hover {
+
+    color: rgb(1, 110, 120) !important; /* Changes the color to blue on hover */
+	text-decoration: underline;
+}
+
+.location-time {
+    font-size: 1em;
+    display: block; /* This will ensure it appears on a new line */
+    color: #666; /* A lighter color for less emphasis */
+    margin-bottom: 1em; /* Adds space below the location-time */
+	color: #a2a2a2;
+	position: relative; /* Relative positioning */
+    left: 54px; /* Moves the text to the right */
+}
+
+.job-details {
+    list-style:  square; /* Adds a square bullet inside the list */
+    /* padding-left: 0; Removes default padding */
+	
+}
+
+.job-details li {
+    margin-bottom: 0.5em; /* Adds space between list items */
+    line-height: 1.6; /* Increases the line height for better readability */
+    text-align: justify; /* Justifies the text for a cleaner look */
+	color: #666;
+}
+
+
+
+
+.job-icon {
+    width: 40px; /* Adjust the width as needed */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10 px;
+}
+
+.education-icon {
+    width: 40px; /* Adjust the width as needed */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10 px;
+}
+
+.publication-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline; /* Ensures it stays on the same line as the icon */
+    margin-bottom: 0.2em; /* Adds a small space below the job title */
+	color: #666;
+	position: relative; /* Relative positioning */
+    left: 0px; /* Moves the text to the right */
+    display: inline-block; /* Allows us to use left positioning */
+}
+
+.publication-details {
+    font-size: 1.1em;
+    display: inline-block; /* This will ensure it appears on a new line */
+    color: #666; /* A lighter color for less emphasis */
+    margin-bottom: 1em; /* Adds space below the location-time */
+	color: #a2a2a2;
+	position: relative; /* Relative positioning */
+    left: 0px; /* Moves the text to the right */
+}
+
+.publication-title a {
+    font-size: 1em;
+    font-weight: bold;
+    display: inline; /* Ensures it stays on the same line as the icon */
+    margin-bottom: 0.2em; /* Adds a small space below the job title */
+    color: #666;
+    text-decoration: none;
+    position: relative; /* Relative positioning */
+    left: 0px; /* Moves the text to the right */
+    display: inline-block; /* Allows us to use left positioning */
+}
+
+#publications .formswift-button {
+    display: none !important; /* Hide the added elements within the #publications section */
+}
+
+.publication-title a:hover {
+
+    color: rgb(1, 110, 120) !important; /* Changes the color to blue on hover */
+	text-decoration: underline;
+}
+
+
+.certificate-title a {
+    font-size: 1.25em;
+    font-weight: bold;
+    display: inline; /* Ensures it stays on the same line as the icon */
+    margin-bottom: 0.2em; /* Adds a small space below the job title */
+    color: #666;
+    text-decoration: none;
+    position: relative; /* Relative positioning */
+    left: 10px; /* Moves the text to the right */
+    display: inline-block; /* Allows us to use left positioning */
+}
+
+.certificate-title a:hover {
+
+    color: rgb(1, 110, 120) !important; /* Changes the color to blue on hover */
+	text-decoration: underline;
+}
+
+.profile-link:hover {
+    color: rgb(1, 110, 120) !important; /* Change this to your preferred shade of blue */
+	text-decoration: underline;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -2432,125 +2596,128 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		background-color: transparent;
-		border-radius: 0.35em;
-		border: solid 3px #efefef;
-		color: #787878 !important;
-		cursor: pointer;
-		display: inline-block;
-		font-weight: 400;
-		height: 3.15em;
-		height: calc(2.75em + 6px);
-		line-height: 2.75em;
-		min-width: 10em;
-		padding: 0 1.5em;
-		text-align: center;
-		text-decoration: none;
-		white-space: nowrap;
-	}
 
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		input[type="button"]:hover,
-		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
-		}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    background-color: rgb(1, 110, 120); 
+	/* transparent; */
+    border-radius: 0.35em;
+    border: solid 4px rgb(1, 110, 120); /* Red border by default */
+    color: white !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.15em;
+    height: calc(2.75em + 6px);
+    line-height: 2.75em;
+    min-width: 10em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
 
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		input[type="button"]:active,
-		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
-		}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+    border-color: #49bf9d; 
+    color: white !important;
+}
 
-		input[type="submit"].icon,
-		input[type="reset"].icon,
-		input[type="button"].icon,
-		.button.icon {
-			padding-left: 1.35em;
-		}
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+.button:active {
+    background-color: rgba(73, 191, 157, 0.1);
+    border-color: #49bf9d;
+    color: #49bf9d !important;
+}
 
-			input[type="submit"].icon:before,
-			input[type="reset"].icon:before,
-			input[type="button"].icon:before,
-			.button.icon:before {
-				margin-right: 0.5em;
-			}
+input[type="submit"].icon,
+input[type="reset"].icon,
+input[type="button"].icon,
+.button.icon {
+    padding-left: 1.35em;
+}
 
-		input[type="submit"].fit,
-		input[type="reset"].fit,
-		input[type="button"].fit,
-		.button.fit {
-			min-width: 0;
-			width: 100%;
-		}
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+input[type="button"].icon:before,
+.button.icon:before {
+    margin-right: 0.5em;
+}
 
-		input[type="submit"].small,
-		input[type="reset"].small,
-		input[type="button"].small,
-		.button.small {
-			font-size: 0.8em;
-		}
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+.button.fit {
+    min-width: 0;
+    width: 100%;
+}
 
-		input[type="submit"].large,
-		input[type="reset"].large,
-		input[type="button"].large,
-		.button.large {
-			font-size: 1.35em;
-		}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+.button.small {
+    font-size: 0.8em;
+}
 
-		input[type="submit"].primary,
-		input[type="reset"].primary,
-		input[type="button"].primary,
-		.button.primary {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
-			color: #ffffff !important;
-		}
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="button"].large,
+.button.large {
+    font-size: 1.35em;
+}
 
-			input[type="submit"].primary:hover,
-			input[type="reset"].primary:hover,
-			input[type="button"].primary:hover,
-			.button.primary:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
-			}
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+.button.primary {
+    background-color: #49bf9d;
+    border-color: #49bf9d;
+    color: #ffffff !important;
+}
 
-			input[type="submit"].primary:active,
-			input[type="reset"].primary:active,
-			input[type="button"].primary:active,
-			.button.primary:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
-			}
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+.button.primary:hover {
+    background-color: #5cc6a7;
+    border-color: #5cc6a7;
+}
 
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
-		input[type="button"].disabled,
-		input[type="button"]:disabled,
-		.button.disabled,
-		.button:disabled {
-			background-color: #e7e7e7 !important;
-			border-color: #e7e7e7 !important;
-			color: #b2b2b2 !important;
-			cursor: default;
-		}
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+input[type="button"].primary:active,
+.button.primary:active {
+    background-color: #3eb08f;
+    border-color: #3eb08f;
+}
+
+input[type="submit"].disabled, input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="button"].disabled,
+input[type="button"]:disabled,
+.button.disabled,
+.button:disabled {
+    background-color: #e7e7e7 !important;
+    border-color: #e7e7e7 !important;
+    color: #b2b2b2 !important;
+    cursor: default;
+}
+
 
 /* Work Item */
 
@@ -2605,7 +2772,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 25%;
 	}
 
 		#header > * {
@@ -2683,8 +2850,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
-		max-width: 54em;
+		margin-left: 25%;
+		max-width: 65em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
